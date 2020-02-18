@@ -1,9 +1,5 @@
-import React, {
-  useMemo,
-  useCallback,
-  useRef,
-  useContext,
-} from 'react'
+import React, { useMemo, useCallback, useRef, useContext } from 'react'
+import { useCssHandles } from 'vtex.css-handles'
 
 interface StepContext {
   registerStep: (element: HTMLLIElement) => number
@@ -22,8 +18,11 @@ export const useStepContext = () => {
   return value
 }
 
+const classes = ['stepGroupWrapper', 'stepGroupList']
+
 const StepGroup: React.FC = ({ children }) => {
   const stepListRef = useRef<HTMLLIElement[]>([])
+  const cssHandles = useCssHandles(classes)
 
   const registerStep = useCallback((element: HTMLLIElement) => {
     return stepListRef.current.push(element)
@@ -39,8 +38,8 @@ const StepGroup: React.FC = ({ children }) => {
 
   return (
     <ctx.Provider value={contextValue}>
-      <div className="wrapper">
-        <ol className="progress">{children}</ol>
+      <div className={cssHandles.stepGroupWrapper}>
+        <ol className={cssHandles.stepGroupList}>{children}</ol>
       </div>
     </ctx.Provider>
   )
