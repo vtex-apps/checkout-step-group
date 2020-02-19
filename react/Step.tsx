@@ -28,19 +28,19 @@ const Step: React.FC<StepProps> = ({ children, title }) => {
   return (
     <li className="flex" ref={elementRef}>
       <div className="flex flex-column">
-        <span className="w1 h1 pa2 bg-muted-1 br-100 c-on-muted-2 f5 b flex items-center justify-center">
+        <span className="w1 h1 pa3 bg-muted-5 br-100 c-on-muted-5 f5 b flex items-center justify-center">
           {index + 1}
         </span>
         {(index ?? 0) < lastIndex && (
           <div
             style={{ width: 1 }}
-            className="flex-auto bg-muted-4 self-center mv3"
+            className="flex-auto bg-muted-4 self-center mv0"
           />
         )}
       </div>
-      <div className="ml4 pb7 mb2 pl3">
-        <div className="flex items-center lh-title">{title}</div>
-        <div className="pv3">{children}</div>
+      <div className="ml4 pb6 pb7-ns pl2">
+        <div className="flex items-center lh-copy">{title}</div>
+        <div className="pt4">{children}</div>
       </div>
     </li>
   )

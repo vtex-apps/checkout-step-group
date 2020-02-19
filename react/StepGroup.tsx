@@ -96,7 +96,7 @@ const StepGroup: React.FC = ({ children }) => {
   return (
     <ctx.Provider value={contextValue}>
       <div className={`${cssHandles.stepGroupWrapper} ph3`}>
-        <h3 className="c-muted-1 f5 mb5 mt0">Checkout</h3>
+        <h3 className="c-muted-1 f5 mb5 mb6-ns mt0">Checkout</h3>
         <ol className={`${cssHandles.stepGroupList} pa0 ma0`}>{children}</ol>
       </div>
     </ctx.Provider>
