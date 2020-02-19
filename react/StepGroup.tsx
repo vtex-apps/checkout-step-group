@@ -21,6 +21,9 @@ import { useCssHandles } from 'vtex.css-handles'
 interface StepContext {
   items: React.MutableRefObject<HTMLLIElement[]>
   assigning: React.MutableRefObject<boolean>
+  activeIndex: number | undefined
+  updateParent: () => void
+  setActive: (element: HTMLLIElement | undefined) => void
 }
 
 const ctx = React.createContext<StepContext | undefined>(undefined)
@@ -49,6 +52,10 @@ export const useStepContext = () => {
 const classes = ['stepGroupWrapper', 'stepGroupList']
 
 const StepGroup: React.FC = ({ children }) => {
+  const [activeElement, setActive] = useState<HTMLLIElement | undefined>(
+    undefined
+  )
+
   const assigning = useRef(true)
 
   const [sentinel, forceUpdate] = useForceUpdate()
@@ -86,11 +93,14 @@ const StepGroup: React.FC = ({ children }) => {
 
   const contextValue = useMemo(
     () => ({
+      activeIndex: activeElement && stepListRef.current.indexOf(activeElement),
+      setActive,
       items: stepListRef,
       assigning,
+      updateParent: forceUpdate,
       sentinel,
     }),
-    [sentinel]
+    [activeElement, forceUpdate, sentinel]
   )
 
   return (
