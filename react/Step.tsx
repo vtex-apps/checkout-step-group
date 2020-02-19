@@ -26,7 +26,7 @@ const Step: React.FC<StepProps> = ({ children, title }) => {
   return (
     <li className="flex" ref={elementRef}>
       <div className="flex flex-column">
-        <span className="w1 h1 pa2 bg-muted-1 br-100 tc c-on-muted-2 f5 b">
+        <span className="w1 h1 pa2 bg-muted-1 br-100 c-on-muted-2 f5 b flex items-center justify-center">
           {index}
         </span>
         {(index ?? 0) < lastIndex && (
