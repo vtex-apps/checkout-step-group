@@ -1,8 +1,10 @@
 {
   "checkout-step-group": {
-    "component": "StepGroup"
+    "component": "StepGroup",
+    "composition": "children"
   },
   "checkout-step": {
-    "component": "Step"
+    "component": "Step",
+    "composition": "children"
   }
 }
