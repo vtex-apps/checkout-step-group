@@ -2,7 +2,9 @@ import React, { useMemo, useCallback, useRef, useContext } from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 
 interface StepContext {
-  registerStep: (element: HTMLLIElement) => number
+  registerStep: (
+    element: HTMLLIElement
+  ) => { index: number; unregister: () => void }
   stepListRef: React.MutableRefObject<HTMLLIElement[]>
 }
 
@@ -25,7 +27,16 @@ const StepGroup: React.FC = ({ children }) => {
   const cssHandles = useCssHandles(classes)
 
   const registerStep = useCallback((element: HTMLLIElement) => {
-    return stepListRef.current.push(element)
+    const index = stepListRef.current.push(element)
+
+    return {
+      index,
+      unregister: () => {
+        const indexToPop = stepListRef.current.indexOf(element)
+
+        stepListRef.current.splice(indexToPop, 1)
+      },
+    }
   }, [])
 
   const contextValue = useMemo(

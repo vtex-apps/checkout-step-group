@@ -8,8 +8,14 @@ const useStepIndicator = (elementRef: React.RefObject<HTMLLIElement>) => {
   const [, forceUpdate] = useReducer((value: number) => value + 1, 0)
 
   useEffect(() => {
-    indexRef.current = registerStep(elementRef.current!)
+    const { index, unregister } = registerStep(elementRef.current!)
+
+    indexRef.current = index
     forceUpdate()
+
+    return () => {
+      unregister()
+    }
   }, [elementRef, registerStep])
 
   return { index: indexRef.current, lastIndex: stepListRef.current.length }
