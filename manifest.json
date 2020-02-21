@@ -5,10 +5,14 @@
   "title": "VTEX Checkout Step Group",
   "description": "Step Group UI Component used by Checkout",
   "builders": {
-    "react": "3.x"
+    "docs": "0.x",
+    "react": "3.x",
+    "store": "0.x"
   },
   "dependencies": {
-    "vtex.styleguide": "9.x"
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.checkout-container": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
