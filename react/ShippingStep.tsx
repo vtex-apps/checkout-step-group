@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
 import { Router } from 'vtex.checkout-container'
 
@@ -14,7 +15,9 @@ const ShippingStep: React.FC = () => {
     <Step
       title={
         <>
-          <h1 className="f4 mv0">Shipping</h1>
+          <h1 className="f4 mv0">
+            <FormattedMessage id="store/checkout-shipping-step-title" />
+          </h1>
           <div className="pl4">
             <ButtonPlain onClick={() => history.push(SHIPPING_ROUTE)}>
               <IconEdit solid />

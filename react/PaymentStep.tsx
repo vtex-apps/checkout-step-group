@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
 import { Router } from 'vtex.checkout-container'
 
@@ -15,7 +16,9 @@ const PaymentStep: React.FC = () => {
     <Step
       title={
         <>
-          <h1 className="f4 mv0">Payment</h1>
+          <h1 className="f4 mv0">
+            <FormattedMessage id="store/checkout-payment-step-title" />
+          </h1>
           <div className="pl4">
             <ButtonPlain onClick={() => history.push(PAYMENT_ROUTE)}>
               <IconEdit solid />
