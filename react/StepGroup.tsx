@@ -69,7 +69,7 @@ const StepGroup: React.FC = ({ children }) => {
       // assigning to false and force an update. Since we're in
       // useLayoutEffect, we won't get a flash of rendered content, it will all
       // happen synchronously. And now that this is false, children won't push
-      // into the array on the forceUpdate      assigning.current = false
+      // into the array on the forceUpdate
       assigning.current = false
       forceUpdate()
     } else {

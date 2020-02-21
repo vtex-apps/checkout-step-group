@@ -17,8 +17,9 @@ const useStepIndicator = (elementRef: React.RefObject<HTMLLIElement>) => {
   })
 
   return {
-    // first render its wrong, after a forceUpdate in parent useLayoutEffect it's
-    // right, and its all synchronous so we don't get any flashing
+    // index is wrong on the first render, but the parent forces a
+    // synchronous second render that fixes its value without flashing
+    // the component
     index: indexRef.current,
     lastIndex: items.current.length - 1,
     ...context,
