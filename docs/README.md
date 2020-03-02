@@ -18,9 +18,8 @@ they finish their order.
 
 2. Add the `checkout-step-group` block inside the block which renders the checkout. For example:
 
-> `interfaces.json`
-
-```json
+```jsonc
+// interfaces.json
 {
   "my-checkout-page": {
     "around": ["checkout-container"],
@@ -29,9 +28,8 @@ they finish their order.
 }
 ```
 
-> `blocks.json`
-
-```json
+```jsonc
+// blocks.json
 {
   "my-checkout-page": {
     "children": ["checkout-step-group"]
@@ -50,9 +48,8 @@ The `checkout-step-group` block renders by default 3 steps, the most common ones
 
 If you want to customize and remove (or add) one of these steps, you can do so by doing the following:
 
-> `blocks.json`
-
 ```jsonc
+// blocks.json
 {
   "checkout-step-group#my-checkout": {
     "children": [
