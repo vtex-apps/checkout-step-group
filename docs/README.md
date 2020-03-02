@@ -4,6 +4,8 @@ The Step Group component renders a list of "steps" in the Checkout interfaces. E
 is represented by a required part of the checkout process that the user must complete before
 they finish their order.
 
+![Illustration of the checkout step group component](https://user-images.githubusercontent.com/10223856/75716685-70843980-5cae-11ea-8fed-bc7ea9a32bd0.png)
+
 ## Configuration
 
 1. Add the Step Group app to your theme's dependencies in the `manifest.json`. For example:
