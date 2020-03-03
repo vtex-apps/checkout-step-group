@@ -4,7 +4,7 @@ The Step Group component renders a list of "steps" in the Checkout interfaces. E
 is represented by a required part of the checkout process that the user must complete before
 they finish their order.
 
-![Illustration of the checkout step group component](https://user-images.githubusercontent.com/10223856/75716685-70843980-5cae-11ea-8fed-bc7ea9a32bd0.png)
+![Illustration of the checkout step group component](https://user-images.githubusercontent.com/10223856/75803899-ed222100-5d5d-11ea-8d02-133f17950297.png)
 
 ## Configuration
 
