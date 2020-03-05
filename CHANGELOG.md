@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- CSS handle to Step Group's checkout label: `stepGroupCheckoutLabel`.
+
+### Changed
+
+- Updated styles of Step Group's wrapper.
+
 ## [0.2.0] - 2020-03-03
 
 ### Added

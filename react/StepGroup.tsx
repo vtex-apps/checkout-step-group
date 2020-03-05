@@ -49,7 +49,7 @@ export const useStepContext = () => {
   return value
 }
 
-const classes = ['stepGroupWrapper', 'stepGroupList']
+const classes = ['stepGroupWrapper', 'stepGroupList', 'stepGroupCheckoutLabel']
 
 const StepGroup: React.FC = ({ children }) => {
   const [activeElement, setActive] = useState<HTMLLIElement | undefined>(
@@ -105,8 +105,12 @@ const StepGroup: React.FC = ({ children }) => {
 
   return (
     <ctx.Provider value={contextValue}>
-      <div className={`${cssHandles.stepGroupWrapper} ph3`}>
-        <h3 className="c-muted-1 f5 mb5 mb6-ns mt0">Checkout</h3>
+      <div className={cssHandles.stepGroupWrapper}>
+        <h3
+          className={`${cssHandles.stepGroupCheckoutLabel} c-muted-1 f5 mb5 mb6-ns mt7 pt4`}
+        >
+          Checkout
+        </h3>
         <ol className={`${cssHandles.stepGroupList} pa0 ma0`}>{children}</ol>
       </div>
     </ctx.Provider>
