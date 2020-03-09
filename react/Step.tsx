@@ -76,7 +76,7 @@ const Step: React.FC<StepProps> = ({ children, title, active = false }) => {
             [handles.indicatorInactive]: !isActive,
             [handles.indicatorActive]: isActive,
             'bg-muted-5 c-on-muted-5 pa2 pa3-ns f6 f5-ns': !isActive,
-            'bg-muted-4 c-on-muted-4 na2 pa3 pa4-ns f5 f4-ns': isActive,
+            'bg-muted-4 c-on-muted-4 na2-ns pa3 pa4-ns f5 f4-ns': isActive,
           }
         )}
       >
