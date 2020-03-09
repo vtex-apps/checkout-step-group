@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- CSS handles to Step component: `step`, `stepTitle`, `indicator`, `indicatorActive`,
+  `indicatorInactive`, `stepContentWrapper`, `stepDivider` and `stepContent`.
+- Styles for mobile resolutions.
+
 ## [0.3.0] - 2020-03-09
 
 ### Added

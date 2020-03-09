@@ -1,7 +1,19 @@
 import classNames from 'classnames'
 import React, { useEffect, useLayoutEffect, useRef } from 'react'
+import { useCssHandles } from 'vtex.css-handles'
 
 import { useStepContext } from './StepGroup'
+
+const CSS_HANDLES = [
+  'step',
+  'stepTitle',
+  'stepContentWrapper',
+  'stepContent',
+  'stepDivider',
+  'indicator',
+  'indicatorActive',
+  'indicatorInactive',
+] as const
 
 const useStepIndicator = (elementRef: React.RefObject<HTMLLIElement>) => {
   const indexRef = useRef<number>(-1)
@@ -47,38 +59,56 @@ const Step: React.FC<StepProps> = ({ children, title, active = false }) => {
     return () => setActive(undefined)
   }, [active, index, setActive])
 
+  const handles = useCssHandles(CSS_HANDLES)
+
   const isActive = activeIndex === index
 
   return (
-    <li className="flex" ref={elementRef}>
-      <div className="flex flex-column">
-        <span
-          className={classNames(
-            'w1 h1 br-100 b flex items-center justify-center',
-            {
-              'bg-muted-5 c-on-muted-5 pa3 f5': !isActive,
-              'bg-muted-4 c-on-muted-4 na2 pa4 f4': isActive,
-            }
-          )}
-        >
-          {index + 1}
-        </span>
-        {(index ?? 0) < lastIndex && (
-          <div
-            style={{ width: 1 }}
-            className="flex-auto bg-muted-4 self-center mv0"
-          />
+    <li
+      className={classNames(handles.step, 'flex flex-wrap items-center')}
+      ref={elementRef}
+    >
+      <span
+        className={classNames(
+          handles.indicator,
+          'w1 h1 br-100 b flex items-center justify-center',
+          {
+            [handles.indicatorInactive]: !isActive,
+            [handles.indicatorActive]: isActive,
+            'bg-muted-5 c-on-muted-5 pa2 pa3-ns f6 f5-ns': !isActive,
+            'bg-muted-4 c-on-muted-4 na2 pa3 pa4-ns f5 f4-ns': isActive,
+          }
         )}
-      </div>
-      <div className="ml4 pb6 pb7-ns pl2">
-        <div
-          className={classNames('flex items-center lh-copy', {
+      >
+        {index + 1}
+      </span>
+      <span
+        className={classNames(
+          handles.stepTitle,
+          'flex items-center lh-copy ml3 ml4-ns pl2-ns',
+          {
             'c-muted-1': activeIndex !== undefined && !isActive,
-          })}
-        >
-          {title}
+          }
+        )}
+      >
+        {title}
+      </span>
+      <div
+        className={classNames(
+          handles.stepContentWrapper,
+          'mt4 mb6 mb7-ns w-100 flex'
+        )}
+      >
+        <div
+          style={{ width: (index ?? 0) < lastIndex ? 1 : 0 }}
+          className={classNames(
+            handles.stepDivider,
+            'dn db-ns bg-muted-4 nt4 nb6 nb7-ns mh5'
+          )}
+        />
+        <div className={classNames(handles.stepContent, 'ml5-ns')}>
+          {children}
         </div>
-        <div className="pt4">{children}</div>
       </div>
     </li>
   )
