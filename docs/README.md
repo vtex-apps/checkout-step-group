@@ -77,3 +77,11 @@ regarding using CSS classes for store customization.
 | `stepGroupWrapper` |
 | `stepGroupList` |
 | `stepGroupCheckoutLabel` |
+| `step` |
+| `indicator` |
+| `indicatorActive` |
+| `indicatorInactive` |
+| `stepTitle` |
+| `stepContentWrapper` |
+| `stepDivider` |
+| `stepContent` |
