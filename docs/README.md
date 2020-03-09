@@ -76,3 +76,4 @@ regarding using CSS classes for store customization.
 | --- |
 | `stepGroupWrapper` |
 | `stepGroupList` |
+| `stepGroupCheckoutLabel` |
