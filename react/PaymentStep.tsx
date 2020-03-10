@@ -2,6 +2,7 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
 import { Router } from 'vtex.checkout-container'
+import { Payment } from 'vtex.checkout-payment'
 
 import IconMastercard from './icons/IconMastercard'
 import Step from './Step'
@@ -28,12 +29,19 @@ const PaymentStep: React.FC = () => {
       }
       active={!!match}
     >
-      <div className="flex items-center">
-        <IconMastercard />
-        <span className="c-base ml5">
-          Credit Card &middot; &middot; &middot; &middot; 0000
-        </span>
-      </div>
+      <Router.Switch>
+        <Router.Route path={PAYMENT_ROUTE}>
+          <Payment />
+        </Router.Route>
+        <Router.Route path="*">
+          <div className="flex items-center">
+            <IconMastercard />
+            <span className="c-base ml5">
+              Credit Card &middot; &middot; &middot; &middot; 0000
+            </span>
+          </div>
+        </Router.Route>
+      </Router.Switch>
     </Step>
   )
 }

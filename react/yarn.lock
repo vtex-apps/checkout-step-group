@@ -190,18 +190,22 @@ shallow-equal@^1.2.1:
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
   integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
 
-"vtex.checkout-container@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-container@0.1.0/public/@types/vtex.checkout-container":
-  version "0.1.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-container@0.1.0/public/@types/vtex.checkout-container#c0e6d7d422f2a830f21704ba5f2ce9326539c708"
+"vtex.checkout-container@https://lucas--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-container@0.2.0+build1583769921/public/@types/vtex.checkout-container":
+  version "0.2.0"
+  resolved "https://lucas--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-container@0.2.0+build1583769921/public/@types/vtex.checkout-container#b1ae8495d6fd2e12a36ba134bb127358f37ea04e"
 
-"vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.1/public/@types/vtex.css-handles":
-  version "0.4.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.1/public/@types/vtex.css-handles#16fe9485e8e7183b94f28496ed8cdd741c83f227"
+"vtex.checkout-payment@https://lucas--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-payment@0.3.0+build1583865529/public/@types/vtex.checkout-payment":
+  version "0.3.0"
+  resolved "https://lucas--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-payment@0.3.0+build1583865529/public/@types/vtex.checkout-payment#6b8e5c294ca20461f295769f18054678e037526b"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.93.0/public/@types/vtex.render-runtime":
-  version "8.93.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.93.0/public/@types/vtex.render-runtime#db45939964edf7c8a3adf12580901c50ad1a0c24"
+"vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.2/public/@types/vtex.css-handles":
+  version "0.4.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.2/public/@types/vtex.css-handles#62ee61d1bb9efdc919e5cf4bb44fabcf9050d255"
 
-"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.112.1/public/@types/vtex.styleguide":
-  version "9.112.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.112.1/public/@types/vtex.styleguide#70b4766493bb03695fb7daf92c4b79236c9830b5"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.95.0/public/@types/vtex.render-runtime":
+  version "8.95.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.95.0/public/@types/vtex.render-runtime#83fadce267c67a81eb99f4cc77afbd54d4c9b650"
+
+"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.112.14/public/@types/vtex.styleguide":
+  version "9.112.14"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.112.14/public/@types/vtex.styleguide#3ad332c14335505fe50545af11331a2d54e681ae"
