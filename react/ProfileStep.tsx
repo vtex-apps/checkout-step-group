@@ -2,6 +2,7 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
 import { Router } from 'vtex.checkout-container'
+import { Profile, ProfilePreview } from 'vtex.checkout-profile'
 
 import Step from './Step'
 
@@ -24,14 +25,11 @@ const ProfileStep: React.FC = () => {
       active={!!match}
     >
       <Router.Switch>
-        <Router.Route path={PROFILE_ROUTE}>profile edit</Router.Route>
+        <Router.Route path={PROFILE_ROUTE}>
+          <Profile />
+        </Router.Route>
         <Router.Route path="*">
-          <div className="flex flex-column">
-            <span className="c-base lh-title">
-              John Doe <br />
-              long-email-address@hotmail.com
-            </span>
-          </div>
+          <ProfilePreview />
         </Router.Route>
       </Router.Switch>
     </Step>

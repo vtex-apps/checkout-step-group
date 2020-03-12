@@ -14,9 +14,10 @@
     "@types/react": "^16.9.20",
     "@types/react-dom": "^16.9.5",
     "vtex.checkout-container": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-container@0.3.0/public/@types/vtex.checkout-container",
-    "vtex.checkout-payment": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-payment@0.3.0/public/@types/vtex.checkout-payment",
+    "vtex.checkout-payment": "https://lucas--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-payment@0.3.0+build1583868054/public/@types/vtex.checkout-payment",
+    "vtex.checkout-profile": "https://lucas--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-profile@0.0.0+build1584018439/public/@types/vtex.checkout-profile",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.2/public/@types/vtex.css-handles",
-    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.95.0/public/@types/vtex.render-runtime",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.95.1/public/@types/vtex.render-runtime",
     "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.112.15/public/@types/vtex.styleguide"
   }
 }
