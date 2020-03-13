@@ -115,7 +115,7 @@ const Step: React.FC<StepProps> = ({
             'dn db-ns bg-muted-4 nt4 nb6 nb7-ns mh5'
           )}
         />
-        <div className={classNames(handles.stepContent, 'ml5-ns w-100')}>
+        <div className={classNames(handles.stepContent, 'ml5-ns w-100 pr8-ns')}>
           {children}
         </div>
       </div>
