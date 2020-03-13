@@ -2,7 +2,7 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
 import { Router } from 'vtex.checkout-container'
-import { Profile, ProfilePreview } from 'vtex.checkout-profile'
+import { ProfileForm, ProfilePreview } from 'vtex.checkout-profile'
 
 import Step from './Step'
 
@@ -26,7 +26,7 @@ const ProfileStep: React.FC = () => {
     >
       <Router.Switch>
         <Router.Route path={PROFILE_ROUTE}>
-          <Profile />
+          <ProfileForm />
         </Router.Route>
         <Router.Route path="*">
           <ProfilePreview />
