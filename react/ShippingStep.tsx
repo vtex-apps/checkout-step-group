@@ -13,17 +13,15 @@ const ShippingStep: React.FC = () => {
 
   return (
     <Step
-      title={
-        <>
-          <h1 className="f4 mv0">
-            <FormattedMessage id="store/checkout-shipping-step-title" />
-          </h1>
+      title={<FormattedMessage id="store/checkout-shipping-step-title" />}
+      actionButton={
+        !match && (
           <div className="pl4">
             <ButtonPlain onClick={() => history.push(SHIPPING_ROUTE)}>
               <IconEdit solid />
             </ButtonPlain>
           </div>
-        </>
+        )
       }
       active={!!match}
     >

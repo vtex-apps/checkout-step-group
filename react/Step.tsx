@@ -39,11 +39,17 @@ const useStepIndicator = (elementRef: React.RefObject<HTMLLIElement>) => {
 }
 
 interface StepProps {
-  title: React.ReactElement
+  title: React.ReactNode
+  actionButton?: React.ReactNode
   active?: boolean
 }
 
-const Step: React.FC<StepProps> = ({ children, title, active = false }) => {
+const Step: React.FC<StepProps> = ({
+  children,
+  title,
+  active = false,
+  actionButton = null,
+}) => {
   const elementRef = useRef<HTMLLIElement>(null)
   const { index, lastIndex, activeIndex, setActive } = useStepIndicator(
     elementRef
@@ -91,7 +97,10 @@ const Step: React.FC<StepProps> = ({ children, title, active = false }) => {
           }
         )}
       >
-        {title}
+        <h2 className={classNames('mv0', { f5: !active, f4: active })}>
+          {title}
+        </h2>
+        {actionButton && <div className="pl4">{actionButton}</div>}
       </span>
       <div
         className={classNames(
