@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Split `Step`'s `title` prop into `title` and `actionButton`.
+
+### Fixed
+
+- Font size of steps titles.
+
 ## [0.5.0] - 2020-03-11
 
 ### Added
