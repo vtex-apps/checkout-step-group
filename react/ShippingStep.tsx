@@ -16,11 +16,9 @@ const ShippingStep: React.FC = () => {
       title={<FormattedMessage id="store/checkout-shipping-step-title" />}
       actionButton={
         !match && (
-          <div className="pl4">
-            <ButtonPlain onClick={() => history.push(SHIPPING_ROUTE)}>
-              <IconEdit solid />
-            </ButtonPlain>
-          </div>
+          <ButtonPlain onClick={() => history.push(SHIPPING_ROUTE)}>
+            <IconEdit solid />
+          </ButtonPlain>
         )
       }
       active={!!match}
