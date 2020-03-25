@@ -97,7 +97,7 @@ const Step: React.FC<StepProps> = ({
           }
         )}
       >
-        <h2 className={classNames('mv0', { f5: !active, f4: active })}>
+        <h2 className={classNames('mv0 fw6', { f5: !active, f4: active })}>
           {title}
         </h2>
         {actionButton && <div className="pl4">{actionButton}</div>}
