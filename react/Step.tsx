@@ -105,10 +105,10 @@ const Step: React.FC<StepProps> = ({
       <div
         className={classNames(
           handles.stepContentWrapper,
-          'mb6 mb7-ns w-100 flex',
+          'mt4 mb6 mb7-ns w-100 flex',
           {
-            'mt4 mt3-ns': !active,
-            'mt4 mt5-ns': active,
+            'mt3-ns': !active,
+            'mt5-ns': active,
           }
         )}
       >
@@ -116,10 +116,10 @@ const Step: React.FC<StepProps> = ({
           style={{ width: (index ?? 0) < lastIndex ? 1 : 0 }}
           className={classNames(
             handles.stepDivider,
-            'dn db-ns bg-muted-4 nb6 nb7-ns mh5',
+            'dn db-ns bg-muted-4 nt4 nb6 nb7-ns mh5',
             {
-              'nt4 nt3-ns': !active,
-              'nt4 nt5-ns': active,
+              'nt3-ns': !active,
+              'nt5-ns': active,
             }
           )}
         />
