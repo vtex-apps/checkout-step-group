@@ -11,10 +11,12 @@
     "messages": "1.x"
   },
   "dependencies": {
-    "vtex.styleguide": "9.x",
-    "vtex.css-handles": "0.x",
     "vtex.checkout-container": "0.x",
-    "vtex.checkout-payment": "0.x"
+    "vtex.checkout-payment": "0.x",
+    "vtex.checkout-profile": "0.x",
+    "vtex.css-handles": "0.x",
+    "vtex.order-manager": "0.x",
+    "vtex.styleguide": "9.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

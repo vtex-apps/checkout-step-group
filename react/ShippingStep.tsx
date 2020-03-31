@@ -2,12 +2,14 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
 import { Router } from 'vtex.checkout-container'
+import { OrderForm } from 'vtex.order-manager'
 
 import Step from './Step'
 
 const SHIPPING_ROUTE = '/shipping'
 
 const ShippingStep: React.FC = () => {
+  const { orderForm } = OrderForm.useOrderForm()
   const history = Router.useHistory()
   const match = Router.useRouteMatch(SHIPPING_ROUTE)
 
@@ -16,7 +18,10 @@ const ShippingStep: React.FC = () => {
       title={<FormattedMessage id="store/checkout-shipping-step-title" />}
       actionButton={
         !match && (
-          <ButtonPlain onClick={() => history.push(SHIPPING_ROUTE)}>
+          <ButtonPlain
+            onClick={() => history.push(SHIPPING_ROUTE)}
+            disabled={!orderForm.canEditData}
+          >
             <IconEdit solid />
           </ButtonPlain>
         )

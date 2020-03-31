@@ -2,12 +2,15 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
 import { Router } from 'vtex.checkout-container'
+import { ProfileForm, ProfileSummary } from 'vtex.checkout-profile'
+import { OrderForm } from 'vtex.order-manager'
 
 import Step from './Step'
 
 const PROFILE_ROUTE = '/profile'
 
 const ProfileStep: React.FC = () => {
+  const { orderForm } = OrderForm.useOrderForm()
   const history = Router.useHistory()
   const match = Router.useRouteMatch(PROFILE_ROUTE)
 
@@ -16,7 +19,10 @@ const ProfileStep: React.FC = () => {
       title={<FormattedMessage id="store/checkout-profile-step-title" />}
       actionButton={
         !match && (
-          <ButtonPlain onClick={() => history.push(PROFILE_ROUTE)}>
+          <ButtonPlain
+            onClick={() => history.push(PROFILE_ROUTE)}
+            disabled={!orderForm.canEditData}
+          >
             <IconEdit solid />
           </ButtonPlain>
         )
@@ -24,14 +30,11 @@ const ProfileStep: React.FC = () => {
       active={!!match}
     >
       <Router.Switch>
-        <Router.Route path={PROFILE_ROUTE}>profile edit</Router.Route>
+        <Router.Route path={PROFILE_ROUTE}>
+          <ProfileForm />
+        </Router.Route>
         <Router.Route path="*">
-          <div className="flex flex-column">
-            <span className="c-base lh-title">
-              John Doe <br />
-              long-email-address@hotmail.com
-            </span>
-          </div>
+          <ProfileSummary />
         </Router.Route>
       </Router.Switch>
     </Step>
