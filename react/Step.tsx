@@ -69,6 +69,8 @@ const Step: React.FC<StepProps> = ({
 
   const isActive = activeIndex === index
 
+  const borderWidth = (index ?? 0) < lastIndex ? 1 : 0
+
   return (
     <li
       className={classNames(handles.step, 'flex flex-wrap items-center')}
@@ -113,7 +115,7 @@ const Step: React.FC<StepProps> = ({
         )}
       >
         <div
-          style={{ width: (index ?? 0) < lastIndex ? 1 : 0 }}
+          style={{ width: borderWidth, minWidth: borderWidth }}
           className={classNames(
             handles.stepDivider,
             'dn db-ns bg-muted-4 nt4 nb6 nb7-ns mh5',
