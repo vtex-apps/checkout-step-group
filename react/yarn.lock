@@ -202,9 +202,9 @@ shallow-equal@^1.2.1:
   version "0.1.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-profile@0.1.0/public/@types/vtex.checkout-profile#fac7a8c77e83ee98e024caf190ca24902cf4caa5"
 
-"vtex.checkout-shipping@https://lucas--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.0.0+build1585787004/public/@types/vtex.checkout-shipping":
-  version "0.0.0"
-  resolved "https://lucas--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.0.0+build1585787004/public/@types/vtex.checkout-shipping#5093d62d1d4e370eaea5c1dbbc8e4b297dc73fd9"
+"vtex.checkout-shipping@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-shipping@0.1.0/public/@types/vtex.checkout-shipping":
+  version "0.1.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-shipping@0.1.0/public/@types/vtex.checkout-shipping#a5ee14a02f5609b27cc940f408e68260a9a490ba"
 
 "vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.2/public/@types/vtex.css-handles":
   version "0.4.2"
@@ -214,10 +214,10 @@ shallow-equal@^1.2.1:
   version "0.8.4"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.8.4/public/@types/vtex.order-manager#3a4761c73364853954dd61a61d1d01260cbbf634"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.98.0/public/@types/vtex.render-runtime":
-  version "8.98.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.98.0/public/@types/vtex.render-runtime#a2e1d054b6bc2d9c1581ec9964c73a5280460aba"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.100.2/public/@types/vtex.render-runtime":
+  version "8.100.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.100.2/public/@types/vtex.render-runtime#c26ce9e296e118784e55707e236cf4bda25e1b29"
 
-"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.112.27/public/@types/vtex.styleguide":
-  version "9.112.27"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.112.27/public/@types/vtex.styleguide#30fa53650c1bb08e25d2252d7c3af4285daccd95"
+"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.115.0/public/@types/vtex.styleguide":
+  version "9.115.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.115.0/public/@types/vtex.styleguide#b83e5804c8a2e0ba389cb612d402bb3047902878"
