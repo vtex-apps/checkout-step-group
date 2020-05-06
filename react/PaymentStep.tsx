@@ -2,10 +2,9 @@ import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
 import { Router } from 'vtex.checkout-container'
-import { Payment } from 'vtex.checkout-payment'
+import { Payment, PaymentSummary } from 'vtex.checkout-payment'
 import { OrderForm } from 'vtex.order-manager'
 
-import IconMastercard from './icons/IconMastercard'
 import Step from './Step'
 
 const PAYMENT_ROUTE = '/payment'
@@ -35,12 +34,7 @@ const PaymentStep: React.FC = () => {
           <Payment />
         </Router.Route>
         <Router.Route path="*">
-          <div className="flex items-center">
-            <IconMastercard />
-            <span className="c-base ml5">
-              Credit Card &middot; &middot; &middot; &middot; 0000
-            </span>
-          </div>
+          <PaymentSummary />
         </Router.Route>
       </Router.Switch>
     </Step>
