@@ -29,14 +29,12 @@ const PaymentStep: React.FC = () => {
       }
       active={!!match}
     >
-      <Router.Switch>
-        <Router.Route path={PAYMENT_ROUTE}>
-          <Payment />
-        </Router.Route>
-        <Router.Route path="*">
-          <PaymentSummary />
-        </Router.Route>
-      </Router.Switch>
+      <div hidden={!match}>
+        <Payment />
+      </div>
+      <div hidden={match}>
+        <PaymentSummary />
+      </div>
     </Step>
   )
 }
