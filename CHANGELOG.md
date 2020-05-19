@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Payment summary component from `checkout-payment` to payment step.
+
+### Changed
+- Use hidden attribute in payment step to avoid unmounting the card iframe.
 
 ## [0.7.0] - 2020-05-06
 ### Added
