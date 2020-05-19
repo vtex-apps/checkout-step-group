@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "checkout-step-group",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "title": "VTEX Checkout Step Group",
   "description": "Step Group UI Component used by Checkout",
   "builders": {
