@@ -40,6 +40,7 @@ const useStepIndicator = (elementRef: React.RefObject<HTMLLIElement>) => {
 
 interface StepProps {
   title: React.ReactNode
+  'data-testid'?: string
   actionButton?: React.ReactNode
   active?: boolean
 }
@@ -47,6 +48,7 @@ interface StepProps {
 const Step: React.FC<StepProps> = ({
   children,
   title,
+  'data-testid': dataTestId,
   active = false,
   actionButton = null,
 }) => {
@@ -102,7 +104,11 @@ const Step: React.FC<StepProps> = ({
         <h2 className={classNames('mv0 fw6', { f5: !active, f4: active })}>
           {title}
         </h2>
-        {actionButton && <div className="pl4">{actionButton}</div>}
+        {actionButton && (
+          <div className="pl4" data-testid={dataTestId}>
+            {actionButton}
+          </div>
+        )}
       </span>
       <div
         className={classNames(

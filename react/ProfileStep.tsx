@@ -17,6 +17,7 @@ const ProfileStep: React.FC = () => {
   return (
     <Step
       title={<FormattedMessage id="store/checkout-profile-step-title" />}
+      data-testid="edit-profile-step"
       actionButton={
         !match && (
           <ButtonPlain
