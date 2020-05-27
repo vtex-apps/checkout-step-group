@@ -17,6 +17,7 @@ const ShippingStep: React.FC = () => {
   return (
     <Step
       title={<FormattedMessage id="store/checkout-shipping-step-title" />}
+      data-testid="edit-shipping-step"
       actionButton={
         !match && (
           <ButtonPlain
