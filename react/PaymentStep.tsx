@@ -1,18 +1,16 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
-import { Router } from 'vtex.checkout-container'
+import { Router, routes } from 'vtex.checkout-container'
 import { Payment, PaymentSummary } from 'vtex.checkout-payment'
-import { OrderForm } from 'vtex.order-manager'
 
 import Step from './Step'
 
-const PAYMENT_ROUTE = '/payment'
+const { useHistory, useRouteMatch } = Router
 
 const PaymentStep: React.FC = () => {
-  const { orderForm } = OrderForm.useOrderForm()
-  const history = Router.useHistory()
-  const match = Router.useRouteMatch(PAYMENT_ROUTE)
+  const history = useHistory()
+  const match = useRouteMatch(routes.PAYMENT)
 
   return (
     <Step
@@ -20,10 +18,7 @@ const PaymentStep: React.FC = () => {
       data-testid="edit-payment-step"
       actionButton={
         !match && (
-          <ButtonPlain
-            onClick={() => history.push(PAYMENT_ROUTE)}
-            disabled={!orderForm.canEditData}
-          >
+          <ButtonPlain onClick={() => history.push(routes.PAYMENT)}>
             <IconEdit solid />
           </ButtonPlain>
         )

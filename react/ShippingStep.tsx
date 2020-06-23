@@ -1,18 +1,16 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
-import { Router } from 'vtex.checkout-container'
-import { OrderForm } from 'vtex.order-manager'
+import { Router, routes } from 'vtex.checkout-container'
 import { ShippingSummary, ShippingForm } from 'vtex.checkout-shipping'
 
 import Step from './Step'
 
-const SHIPPING_ROUTE = '/shipping'
+const { useHistory, useRouteMatch } = Router
 
 const ShippingStep: React.FC = () => {
-  const { orderForm } = OrderForm.useOrderForm()
-  const history = Router.useHistory()
-  const match = Router.useRouteMatch(SHIPPING_ROUTE)
+  const history = useHistory()
+  const match = useRouteMatch(routes.SHIPPING)
 
   return (
     <Step
@@ -20,10 +18,7 @@ const ShippingStep: React.FC = () => {
       data-testid="edit-shipping-step"
       actionButton={
         !match && (
-          <ButtonPlain
-            onClick={() => history.push(SHIPPING_ROUTE)}
-            disabled={!orderForm.canEditData}
-          >
+          <ButtonPlain onClick={() => history.push(routes.SHIPPING)}>
             <IconEdit solid />
           </ButtonPlain>
         )
@@ -31,7 +26,7 @@ const ShippingStep: React.FC = () => {
       active={!!match}
     >
       <Router.Switch>
-        <Router.Route path={SHIPPING_ROUTE}>
+        <Router.Route path={routes.SHIPPING}>
           <ShippingForm />
         </Router.Route>
         <Router.Route path="*">

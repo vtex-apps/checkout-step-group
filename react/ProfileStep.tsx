@@ -1,18 +1,29 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
-import { Router } from 'vtex.checkout-container'
+import { Router, ContainerContext, routes } from 'vtex.checkout-container'
 import { ProfileForm, ProfileSummary } from 'vtex.checkout-profile'
 import { OrderForm } from 'vtex.order-manager'
 
 import Step from './Step'
 
-const PROFILE_ROUTE = '/profile'
+const { useOrderForm } = OrderForm
+const { useHistory, useRouteMatch } = Router
+const { useCheckoutContainer } = ContainerContext
 
 const ProfileStep: React.FC = () => {
-  const { orderForm } = OrderForm.useOrderForm()
-  const history = Router.useHistory()
-  const match = Router.useRouteMatch(PROFILE_ROUTE)
+  const { orderForm } = useOrderForm()
+  const history = useHistory()
+  const match = useRouteMatch(routes.PROFILE)
+  const { requestLogin } = useCheckoutContainer()
+
+  const handleProfileEdit = () => {
+    if (orderForm.canEditData) {
+      history.push(routes.PROFILE)
+    } else {
+      requestLogin()
+    }
+  }
 
   return (
     <Step
@@ -20,10 +31,7 @@ const ProfileStep: React.FC = () => {
       data-testid="edit-profile-step"
       actionButton={
         !match && (
-          <ButtonPlain
-            onClick={() => history.push(PROFILE_ROUTE)}
-            disabled={!orderForm.canEditData}
-          >
+          <ButtonPlain onClick={handleProfileEdit}>
             <IconEdit solid />
           </ButtonPlain>
         )
@@ -31,7 +39,7 @@ const ProfileStep: React.FC = () => {
       active={!!match}
     >
       <Router.Switch>
-        <Router.Route path={PROFILE_ROUTE}>
+        <Router.Route path={routes.PROFILE}>
           <ProfileForm />
         </Router.Route>
         <Router.Route path="*">
