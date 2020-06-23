@@ -98,7 +98,7 @@ const StepGroup: React.FC = ({ children }) => {
         stepListRef.current = []
       }
     }
-  })
+  }, [forceUpdate, sentinel])
 
   const contextValue = useMemo(
     () => ({
