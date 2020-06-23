@@ -7,6 +7,11 @@ import React, {
   useState,
 } from 'react'
 import { useCssHandles } from 'vtex.css-handles'
+import { OrderForm } from 'vtex.order-manager'
+import { Alert } from 'vtex.styleguide'
+import { FormattedMessage, useIntl } from 'react-intl'
+
+const { useOrderForm } = OrderForm
 
 /**
  * The component below is implemented following the "guidelines" of
@@ -52,6 +57,10 @@ export const useStepContext = () => {
 const classes = ['stepGroupWrapper', 'stepGroupList', 'stepGroupCheckoutLabel']
 
 const StepGroup: React.FC = ({ children }) => {
+  const { orderForm } = useOrderForm()
+  const intl = useIntl()
+  const [alertOpen, setAlertOpen] = useState(!orderForm.canEditData)
+
   const [activeElement, setActive] = useState<HTMLLIElement | undefined>(
     undefined
   )
@@ -103,14 +112,31 @@ const StepGroup: React.FC = ({ children }) => {
     [activeElement, forceUpdate, sentinel]
   )
 
+  const handleAlertClose = () => {
+    setAlertOpen(false)
+  }
+
   return (
     <ctx.Provider value={contextValue}>
       <div className={cssHandles.stepGroupWrapper}>
         <h3
           className={`${cssHandles.stepGroupCheckoutLabel} c-muted-1 f5 mb5 mb6-ns mt7 pt4`}
         >
-          Checkout
+          <FormattedMessage id="store/checkout-label" />
         </h3>
+        {alertOpen && (
+          <div className="mb5 mb6-ns">
+            <Alert
+              type="success"
+              closeIconLabel={intl.formatMessage({
+                id: 'store/checkout-autofill-close-label',
+              })}
+              onClose={handleAlertClose}
+            >
+              <FormattedMessage id="store/checkout-autofill-message" />
+            </Alert>
+          </div>
+        )}
         <ol className={`${cssHandles.stepGroupList} pa0 ma0`}>{children}</ol>
       </div>
     </ctx.Provider>
