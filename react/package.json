@@ -14,13 +14,13 @@
     "@types/react": "^16.9.20",
     "@types/react-dom": "^16.9.5",
     "vtex.checkout-container": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-container@0.6.2/public/@types/vtex.checkout-container",
-    "vtex.checkout-payment": "https://pedrocheckout--extensions.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-payment@0.9.0+build1605191438/public/@types/vtex.checkout-payment",
+    "vtex.checkout-payment": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-payment@0.11.3/public/@types/vtex.checkout-payment",
     "vtex.checkout-profile": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-profile@0.3.0/public/@types/vtex.checkout-profile",
-    "vtex.checkout-shipping": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-shipping@0.4.1/public/@types/vtex.checkout-shipping",
+    "vtex.checkout-shipping": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-shipping@0.6.5/public/@types/vtex.checkout-shipping",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles",
-    "vtex.order-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.8.7/public/@types/vtex.order-manager",
-    "vtex.order-payment": "https://pedrocheckout--extensions.myvtex.com/_v/private/typings/linked/v1/vtex.order-payment@0.7.0+build1605185470/public/@types/vtex.order-payment",
-    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.124.3/public/@types/vtex.render-runtime",
-    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.133.2/public/@types/vtex.styleguide"
+    "vtex.order-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.9.0/public/@types/vtex.order-manager",
+    "vtex.order-payment": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-payment@0.8.0/public/@types/vtex.order-payment",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.7/public/@types/vtex.render-runtime",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.134.1/public/@types/vtex.styleguide"
   }
 }

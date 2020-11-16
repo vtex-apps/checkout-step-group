@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- Do not show `IconEdit` Component if the purchase is free
+- Do not show Icon Edit if the purchase is free
 
 ## [0.10.0] - 2021-01-05
 ### Added
