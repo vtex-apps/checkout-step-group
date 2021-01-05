@@ -54,7 +54,12 @@ export const useStepContext = () => {
   return value
 }
 
-const classes = ['stepGroupWrapper', 'stepGroupList', 'stepGroupCheckoutLabel']
+const classes = [
+  'stepGroupWrapper',
+  'stepGroupList',
+  'stepGroupCheckoutLabel',
+  'stepGroupAlert',
+] as const
 
 const StepGroup: React.FC = ({ children }) => {
   const { orderForm } = useOrderForm()
@@ -125,7 +130,7 @@ const StepGroup: React.FC = ({ children }) => {
           <FormattedMessage id="store/checkout-label" />
         </h3>
         {alertOpen && (
-          <div className="mb5 mb6-ns">
+          <div className={`${cssHandles.stepGroupAlert} mb5 mb6-ns`}>
             <Alert
               type="success"
               closeIconLabel={intl.formatMessage({
