@@ -11,7 +11,15 @@
     "component": "ProfileStep"
   },
   "shipping-step": {
-    "component": "ShippingStep"
+    "component": "ShippingStep",
+    "preview": {
+      "type": "box",
+      "height": 250,
+      "fullWidth": true,
+      "options": {
+        "padding": 0
+      }
+    }
   },
   "address-step": {
     "component": "AddressStep"
