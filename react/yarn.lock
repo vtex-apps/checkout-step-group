@@ -202,9 +202,9 @@ shallow-equal@^1.2.1:
   version "0.3.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-profile@0.3.0/public/@types/vtex.checkout-profile#e3dc590c2de3d774dd46be234b6636715e88ab32"
 
-"vtex.checkout-shipping@https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.6.6+build1612205256/public/@types/vtex.checkout-shipping":
+"vtex.checkout-shipping@https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.6.6+build1612288862/public/@types/vtex.checkout-shipping":
   version "0.6.6"
-  resolved "https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.6.6+build1612205256/public/@types/vtex.checkout-shipping#a25267d9b8d66bb317cc3db25564b70866c65d26"
+  resolved "https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.6.6+build1612288862/public/@types/vtex.checkout-shipping#451c3404341c2b6f678d389ed4908fc286c21394"
 
 "vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles":
   version "0.4.4"
@@ -217,6 +217,10 @@ shallow-equal@^1.2.1:
 "vtex.order-payment@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-payment@0.8.0/public/@types/vtex.order-payment":
   version "0.8.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-payment@0.8.0/public/@types/vtex.order-payment#916bba03b2fb9c653d1dc1503cfd0a3d3a47b451"
+
+"vtex.order-shipping@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-shipping@0.7.0/public/@types/vtex.order-shipping":
+  version "0.7.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-shipping@0.7.0/public/@types/vtex.order-shipping#4d020086b9da30807f0b6ec059c30d5a8727889d"
 
 "vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.10/public/@types/vtex.render-runtime":
   version "8.126.10"
