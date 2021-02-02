@@ -15,7 +15,7 @@ const ProfileStep: React.FC = () => {
   const { orderForm } = useOrderForm()
   const history = useHistory()
   const match = useRouteMatch(routes.PROFILE)
-  const { requestLogin } = useCheckoutContainer()
+  const { requestLogin, isProfileEditable } = useCheckoutContainer()
 
   const handleProfileEdit = () => {
     if (orderForm.canEditData) {
@@ -30,7 +30,8 @@ const ProfileStep: React.FC = () => {
       title={<FormattedMessage id="store/checkout-profile-step-title" />}
       data-testid="edit-profile-step"
       actionButton={
-        !match && (
+        !match &&
+        isProfileEditable && (
           <ButtonPlain onClick={handleProfileEdit}>
             <IconEdit solid />
           </ButtonPlain>

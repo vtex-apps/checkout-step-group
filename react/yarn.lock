@@ -190,21 +190,21 @@ shallow-equal@^1.2.1:
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
   integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
 
-"vtex.checkout-container@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-container@0.6.2/public/@types/vtex.checkout-container":
+"vtex.checkout-container@https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-container@0.6.2+build1612208052/public/@types/vtex.checkout-container":
   version "0.6.2"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-container@0.6.2/public/@types/vtex.checkout-container#a3862cecfeaf1af70e26f70e24a51224297e1138"
+  resolved "https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-container@0.6.2+build1612208052/public/@types/vtex.checkout-container#98a452311dd1372a858dc876bd1d443b68ceb0b5"
 
-"vtex.checkout-payment@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-payment@0.11.3/public/@types/vtex.checkout-payment":
-  version "0.11.3"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-payment@0.11.3/public/@types/vtex.checkout-payment#c78f7e2c95f1c81e212279941be3716daad233e8"
+"vtex.checkout-payment@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-payment@0.12.0/public/@types/vtex.checkout-payment":
+  version "0.12.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-payment@0.12.0/public/@types/vtex.checkout-payment#6639e365e8124b3390e83fa41ca89d1d5c3361d9"
 
 "vtex.checkout-profile@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-profile@0.3.0/public/@types/vtex.checkout-profile":
   version "0.3.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-profile@0.3.0/public/@types/vtex.checkout-profile#e3dc590c2de3d774dd46be234b6636715e88ab32"
 
-"vtex.checkout-shipping@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-shipping@0.6.5/public/@types/vtex.checkout-shipping":
-  version "0.6.5"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-shipping@0.6.5/public/@types/vtex.checkout-shipping#b7ea02ac0236010424972f1408e031fa8302ae09"
+"vtex.checkout-shipping@https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.6.6+build1612205256/public/@types/vtex.checkout-shipping":
+  version "0.6.6"
+  resolved "https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.6.6+build1612205256/public/@types/vtex.checkout-shipping#a25267d9b8d66bb317cc3db25564b70866c65d26"
 
 "vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles":
   version "0.4.4"
@@ -218,10 +218,10 @@ shallow-equal@^1.2.1:
   version "0.8.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-payment@0.8.0/public/@types/vtex.order-payment#916bba03b2fb9c653d1dc1503cfd0a3d3a47b451"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.7/public/@types/vtex.render-runtime":
-  version "8.126.7"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.7/public/@types/vtex.render-runtime#bf00fb2ef41c5158c566c12dc6dd9dd0d5c2a9e9"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.10/public/@types/vtex.render-runtime":
+  version "8.126.10"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.10/public/@types/vtex.render-runtime#1eb37d8ef0fcaef17060306f6d5dff6d9e404d39"
 
-"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.134.1/public/@types/vtex.styleguide":
-  version "9.134.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.134.1/public/@types/vtex.styleguide#7210ed4908f4e6482d2499d71c4cfcc21e3dfd6a"
+"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.135.1/public/@types/vtex.styleguide":
+  version "9.135.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.135.1/public/@types/vtex.styleguide#ed8d203eff74ed072b6e2f6ddb66d0c92b797ade"

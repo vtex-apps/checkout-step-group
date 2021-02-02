@@ -1,20 +1,22 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
-import { Router, routes } from 'vtex.checkout-container'
+import { Router, ContainerContext, routes } from 'vtex.checkout-container'
 import { Payment, PaymentSummary } from 'vtex.checkout-payment'
 import { useOrderPayment } from 'vtex.order-payment/OrderPayment'
 
 import Step from './Step'
 
 const { useHistory, useRouteMatch } = Router
+const { useCheckoutContainer } = ContainerContext
 
 const PaymentStep: React.FC = () => {
   const history = useHistory()
   const match = useRouteMatch(routes.PAYMENT)
   const { isFreePurchase } = useOrderPayment()
+  const { isPaymentEditable } = useCheckoutContainer()
 
-  const shouldShowEditButton = !match && !isFreePurchase
+  const shouldShowEditButton = !match && !isFreePurchase && isPaymentEditable
 
   return (
     <Step

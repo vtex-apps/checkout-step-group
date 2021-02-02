@@ -1,5 +1,10 @@
 {
   "checkout-step-group": {
-    "children": ["profile-step", "shipping-step", "payment-step"]
+    "children": [
+      "profile-step",
+      "shipping-step",
+      "address-step",
+      "payment-step"
+    ]
   }
 }

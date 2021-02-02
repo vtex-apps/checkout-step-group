@@ -13,6 +13,9 @@
   "shipping-step": {
     "component": "ShippingStep"
   },
+  "address-step": {
+    "component": "AddressStep"
+  },
   "payment-step": {
     "component": "PaymentStep"
   }

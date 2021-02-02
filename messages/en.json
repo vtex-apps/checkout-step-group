@@ -4,5 +4,6 @@
   "store/checkout-autofill-close-label": "Close",
   "store/checkout-profile-step-title": "Profile",
   "store/checkout-shipping-step-title": "Shipping",
+  "store/checkout-address-step-title": "Address",
   "store/checkout-payment-step-title": "Payment"
 }
