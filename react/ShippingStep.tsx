@@ -1,17 +1,17 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { ButtonPlain, IconEdit } from 'vtex.styleguide'
-import { Router, ContainerContext, routes } from 'vtex.checkout-container'
+import { ContainerContext, routes } from 'vtex.checkout-container'
 import { ShippingSummary, ShippingForm } from 'vtex.checkout-shipping'
+import { useRuntime } from 'vtex.render-runtime'
 
 import Step from './Step'
 
-const { useHistory, useRouteMatch } = Router
 const { useCheckoutContainer } = ContainerContext
 
 const ShippingStep: React.FC = () => {
-  const history = useHistory()
-  const match = useRouteMatch(routes.SHIPPING)
+  const { page, navigate } = useRuntime()
+  const match = page === 'store.checkout.shipping'
   const { isShippingEditable } = useCheckoutContainer()
 
   return (
@@ -21,21 +21,14 @@ const ShippingStep: React.FC = () => {
       actionButton={
         !match &&
         isShippingEditable && (
-          <ButtonPlain onClick={() => history.push(routes.SHIPPING)}>
+          <ButtonPlain onClick={() => navigate({ to: routes.SHIPPING })}>
             <IconEdit solid />
           </ButtonPlain>
         )
       }
       active={!!match}
     >
-      <Router.Switch>
-        <Router.Route path={routes.SHIPPING}>
-          <ShippingForm />
-        </Router.Route>
-        <Router.Route path="*">
-          <ShippingSummary />
-        </Router.Route>
-      </Router.Switch>
+      {match ? <ShippingForm /> : <ShippingSummary />}
     </Step>
   )
 }

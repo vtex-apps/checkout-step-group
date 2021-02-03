@@ -190,9 +190,9 @@ shallow-equal@^1.2.1:
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
   integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
 
-"vtex.checkout-container@https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-container@0.6.2+build1612208052/public/@types/vtex.checkout-container":
+"vtex.checkout-container@https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-container@0.6.2+build1612384432/public/@types/vtex.checkout-container":
   version "0.6.2"
-  resolved "https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-container@0.6.2+build1612208052/public/@types/vtex.checkout-container#98a452311dd1372a858dc876bd1d443b68ceb0b5"
+  resolved "https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-container@0.6.2+build1612384432/public/@types/vtex.checkout-container#5748337f200ebea86174d93fb0d76a029818b2df"
 
 "vtex.checkout-payment@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-payment@0.12.0/public/@types/vtex.checkout-payment":
   version "0.12.0"
@@ -202,9 +202,9 @@ shallow-equal@^1.2.1:
   version "0.3.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-profile@0.3.0/public/@types/vtex.checkout-profile#e3dc590c2de3d774dd46be234b6636715e88ab32"
 
-"vtex.checkout-shipping@https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.6.6+build1612288862/public/@types/vtex.checkout-shipping":
+"vtex.checkout-shipping@https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.6.6+build1612382908/public/@types/vtex.checkout-shipping":
   version "0.6.6"
-  resolved "https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.6.6+build1612288862/public/@types/vtex.checkout-shipping#451c3404341c2b6f678d389ed4908fc286c21394"
+  resolved "https://addr--checkoutio.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-shipping@0.6.6+build1612382908/public/@types/vtex.checkout-shipping#77e8792e3943948f7f945fa943ead79385aa690f"
 
 "vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles":
   version "0.4.4"
@@ -222,9 +222,9 @@ shallow-equal@^1.2.1:
   version "0.7.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-shipping@0.7.0/public/@types/vtex.order-shipping#4d020086b9da30807f0b6ec059c30d5a8727889d"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.10/public/@types/vtex.render-runtime":
-  version "8.126.10"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.10/public/@types/vtex.render-runtime#1eb37d8ef0fcaef17060306f6d5dff6d9e404d39"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.11/public/@types/vtex.render-runtime":
+  version "8.126.11"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.11/public/@types/vtex.render-runtime#aceb734766093b56954ec19a074574b4c2c95242"
 
 "vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.135.1/public/@types/vtex.styleguide":
   version "9.135.1"
