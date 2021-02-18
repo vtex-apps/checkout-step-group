@@ -10,7 +10,13 @@ import Step from './Step'
 const { useHistory, useRouteMatch } = Router
 const { useCheckoutContainer } = ContainerContext
 
-const PaymentStep: React.FC = () => {
+type BillingAddressType = React.ComponentProps<typeof Payment>['billingAddressType']
+
+interface Props {
+  billingAddressType?: BillingAddressType
+}
+
+const PaymentStep: React.FC<Props> = ({ billingAddressType }) => {
   const history = useHistory()
   const match = useRouteMatch(routes.PAYMENT)
   const { isFreePurchase } = useOrderPayment()
@@ -32,7 +38,7 @@ const PaymentStep: React.FC = () => {
       active={!!match}
     >
       <div hidden={!match}>
-        <Payment />
+        <Payment billingAddressType={billingAddressType} />
       </div>
       <div hidden={match}>
         <PaymentSummary />

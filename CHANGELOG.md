@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Added
+- `billingAddressType` parameter to allow control of Billing Addres input
+
 ## [0.13.0] - 2021-02-23
 ### Changed
 - Added loading state for shipping and address step.
