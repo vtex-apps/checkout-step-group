@@ -190,21 +190,21 @@ shallow-equal@^1.2.1:
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
   integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
 
-"vtex.checkout-container@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-container@0.7.0/public/@types/vtex.checkout-container":
-  version "0.7.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-container@0.7.0/public/@types/vtex.checkout-container#4c06bc1357567e7dd6cff1f18c1ac15c64fd72c9"
+"vtex.checkout-container@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-container@0.8.0/public/@types/vtex.checkout-container":
+  version "0.8.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-container@0.8.0/public/@types/vtex.checkout-container#2f8b1932cbcdea4f094fd9d598fba2b1c29681bb"
 
-"vtex.checkout-payment@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-payment@0.13.0/public/@types/vtex.checkout-payment":
-  version "0.13.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-payment@0.13.0/public/@types/vtex.checkout-payment#771265233b3b6f8aa9f01b921ac41ca70e479a57"
+"vtex.checkout-payment@https://newartur--extensions.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-payment@0.13.1+build1614292840/public/@types/vtex.checkout-payment":
+  version "0.13.1"
+  resolved "https://newartur--extensions.myvtex.com/_v/private/typings/linked/v1/vtex.checkout-payment@0.13.1+build1614292840/public/@types/vtex.checkout-payment#ec01973d4e540c986251f7eab9d6dc89a33479bd"
 
 "vtex.checkout-profile@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-profile@0.3.0/public/@types/vtex.checkout-profile":
   version "0.3.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-profile@0.3.0/public/@types/vtex.checkout-profile#e3dc590c2de3d774dd46be234b6636715e88ab32"
 
-"vtex.checkout-shipping@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-shipping@0.7.1/public/@types/vtex.checkout-shipping":
-  version "0.7.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-shipping@0.7.1/public/@types/vtex.checkout-shipping#198d9c59b94c37a6e309b8dae929d3d485f2541c"
+"vtex.checkout-shipping@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-shipping@0.7.2/public/@types/vtex.checkout-shipping":
+  version "0.7.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-shipping@0.7.2/public/@types/vtex.checkout-shipping#de2d23930d27d977a38444ddc95c0c50fcc3e0a7"
 
 "vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles":
   version "0.4.4"
