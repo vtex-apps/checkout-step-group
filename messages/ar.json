@@ -1,0 +1,9 @@
+{
+  "store/checkout-label": "الدقع",
+  "store/checkout-autofill-message": "مرحبا بعودتك! تم ملء بياناتك بشكل آمن.",
+  "store/checkout-autofill-close-label": "إغلاق",
+  "store/checkout-profile-step-title": "الملف الشخصي",
+  "store/checkout-shipping-step-title": "الشحن",
+  "store/checkout-address-step-title": "العنوان",
+  "store/checkout-payment-step-title": "الدفع"
+}

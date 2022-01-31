@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Arabic translation.
+
 ## [0.13.0] - 2021-02-23
 ### Changed
 - Added loading state for shipping and address step.
@@ -26,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.8.1] - 2020-05-27
 ### Added
-- Use testId on `Step` action button. 
+- Use testId on `Step` action button.
 
 ## [0.8.0] - 2020-05-19
 ### Added
